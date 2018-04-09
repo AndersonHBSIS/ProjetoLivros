@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{3A5EB11A-A7BC-4766-B5E9-B841859A5227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{13830198-DA6B-4D8D-9DDC-41D4107F3C28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{A427B432-9584-4F51-B153-F45F46D0BD4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{3DE950D0-E468-4280-98D6-AD59E969CEA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{9137A900-EEE4-4917-9EE2-E9E6151E957C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCutting", "4.1 - CrossCutting", "{4320AE5C-1C0B-43F2-B6DA-337B668194A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Data", "4.2 - Data", "{85308027-06C6-4265-95CD-204C820EB803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livro.Application", "Livro.Application\Livro.Application.csproj", "{606B5014-1841-4B5B-8C67-A983ACBA1E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livro.Domain", "Livro.Domain\Livro.Domain.csproj", "{09750FAC-8E32-488E-9B69-823A058BD7D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livro.Infra.Data", "Infra.Data\Livro.Infra.Data.csproj", "{8A60760F-6AB5-4447-B220-4EF76637B09F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livro.Api", "Livro.Api\Livro.Api.csproj", "{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Livro.Ui(3)", "Livro.Ui\", "{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55142"
+		Debug.AspNetCompiler.PhysicalPath = "Livro.Ui\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55142\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55142"
+		Release.AspNetCompiler.PhysicalPath = "Livro.Ui\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55142\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55142"
+		SlnRelativePath = "Livro.Ui\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606B5014-1841-4B5B-8C67-A983ACBA1E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606B5014-1841-4B5B-8C67-A983ACBA1E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606B5014-1841-4B5B-8C67-A983ACBA1E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606B5014-1841-4B5B-8C67-A983ACBA1E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09750FAC-8E32-488E-9B69-823A058BD7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09750FAC-8E32-488E-9B69-823A058BD7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09750FAC-8E32-488E-9B69-823A058BD7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09750FAC-8E32-488E-9B69-823A058BD7D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A60760F-6AB5-4447-B220-4EF76637B09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A60760F-6AB5-4447-B220-4EF76637B09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A60760F-6AB5-4447-B220-4EF76637B09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A60760F-6AB5-4447-B220-4EF76637B09F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4320AE5C-1C0B-43F2-B6DA-337B668194A7} = {9137A900-EEE4-4917-9EE2-E9E6151E957C}
+		{85308027-06C6-4265-95CD-204C820EB803} = {9137A900-EEE4-4917-9EE2-E9E6151E957C}
+		{606B5014-1841-4B5B-8C67-A983ACBA1E23} = {A427B432-9584-4F51-B153-F45F46D0BD4A}
+		{09750FAC-8E32-488E-9B69-823A058BD7D6} = {3DE950D0-E468-4280-98D6-AD59E969CEA6}
+		{8A60760F-6AB5-4447-B220-4EF76637B09F} = {85308027-06C6-4265-95CD-204C820EB803}
+		{1EF75414-4D4C-4ED9-9E38-3FC55EBF8BFB} = {13830198-DA6B-4D8D-9DDC-41D4107F3C28}
+		{8D6003B2-1AAD-4F1A-8FF9-4886AE596BBC} = {3A5EB11A-A7BC-4766-B5E9-B841859A5227}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D36EE9F-D96B-44F7-96A6-263DA32E0ED2}
+	EndGlobalSection
+EndGlobal

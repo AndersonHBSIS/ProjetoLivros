@@ -1,0 +1,83 @@
+<main>
+  <section>
+    <div class="row">
+      <div class="col s12 m6">
+
+        <div *ngIf="!novoShow && !editarShow" class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lista de Livros</span>
+            <button type="button" class="waves-effect waves-light btn" (click)="novoLivro()">Novo</button>
+          </div>
+          <div class="card-action">
+            <table *ngIf="listaLivro">
+              <thead>
+                <tr>
+                  <td>Id</td>
+                  <td>Nome do livro</td>
+                  <td>Nome do Autor</td>
+                  <td>Ativo</td>
+                  <td style="text-align: center">Ações</td>
+                </tr>
+              </thead>
+              <tbody *ngFor="let item of listaLivro">
+                <tr>
+                  <td>{{item.LivroId}}</td>
+                  <td>{{item.Nome}}</td>
+                  <td>{{item.NomeAutor}}</td>
+                  <td>{{item.Ativo}}</td>
+                  <td style="text-align: center">
+                    <button type="button" class="waves-effect waves-light btn" (click)="editarLivro(item)">Editar</button>
+                    <button type="button" class="waves-effect waves-light btn" (click)="excluirLivro(item)">Excluir</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div *ngIf="novoShow" class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Novo Livro</span>
+            <div>
+              <button type="button" class="waves-effect waves-light btn" (click)="voltar()">Voltar</button>
+              <button type="button" class="waves-effect waves-light btn" (click)="salvarLivro()">Salvar</button>
+            </div>
+          </div>
+          <div class="card-action">
+            <label for="nomeLivro">Nome do livro</label>
+            <input id="nomeLivro" (input)="nomeLivro = $event.target.value">
+            <label for="nomeAutor">Nome do Autor</label>
+            <input id="nomeAutor" (input)="nomeAutor = $event.target.value">
+            <input type="checkbox" id="ativo" [checked]="ativo" (change)="ativo = !ativo" />
+            <label for="ativo">Ativo</label>
+            <div *ngIf="showMensagemSucesso" class="mensagem-sucesso">
+              <span style="color: greenyellow">Inserido com sucesso!</span>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="editarShow" class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Editar Livro</span>
+            <div>
+              <button type="button" class="waves-effect waves-light btn" (click)="voltar()">Voltar</button>
+              <button type="button" class="waves-effect waves-light btn" (click)="salvarEdicaoLivro()">Salvar</button>
+            </div>
+          </div>
+          <div class="card-action">
+            <label for="nomeLivro">Nome do livro</label>
+            <input id="nomeLivro" (input)="nomeLivro = $event.target.value" [value]="nomeLivro">
+            <label for="nomeAutor">Nome do Autor</label>
+            <input id="nomeAutor" (input)="nomeAutor = $event.target.value" [value]="nomeAutor">
+            <input type="checkbox" id="ativo" [checked]="ativo" (change)="ativo = !ativo"/>
+            <label for="ativo">Ativo</label>
+            <div *ngIf="showMensagemSucesso" class="mensagem-sucesso">
+              <span style="color: greenyellow">Salvo com sucesso!</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
